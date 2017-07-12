@@ -5,7 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
-
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .icon-block {
   padding: 0 15px;
 }
