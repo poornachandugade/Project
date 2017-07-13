@@ -24,3 +24,10 @@ body{
 .dropdown-content{
     overflow: visible !important;
 }
+.dropdown-content li{
+  min-height:40px;
+}
+.dropdown-content li a{
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
