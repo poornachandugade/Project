@@ -2,339 +2,364 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>FMSCI</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>NMF</title>
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#!" class='dropdown-button' data-activates='dropdown1'>FMSCI</a>
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="layout/fmsci/about-us.html">About Us</a></li>
-                        <li><a href="layout/fmsci/history.html">History</a></li>
-                        <li><a href="layout/fmsci/council-subcommittee.html">Council & Sub Committee</a></li>
-                        <li><a href="layout/fmsci/secretariat.html">Secretariat</a></li>
-                        <li><a href="layout/fmsci/member-clubs.html">Member Clubs</a></li>
-                        <li><a href="layout/fmsci/affliations.html">Affiliations</a></li>
-                        <li><a href="layout/fmsci/accredited-academics.html">FMSCI Accredited Academies</a></li>
-                        <li><a href="layout/fmsci/roll-of-honour.html">Roll of Honour</a></li>
-                        <li><a href="#!">Annual Reports</a></li>
-                        <li><a href="#!">Audit Report</a></li>
-                        <li><a href="#!">Articles of Association</a></li>
-                        <li><a href="#!">Certificate of Incorporation</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class='dropdown-button' data-activates='dropdown2'>MOTORSPORT EVENTS</a>
-                    <ul id='dropdown2' class='dropdown-content'>
-                        <li><a href="layout/events/karting.html">karting</a></li>
-                        <li><a href="layout/events/2w-rally.html">2w rally</a></li>
-                        <li><a href="layout/events/2w-race.html">2w race</a></li>
-                        <li><a href="layout/events/4w-rally.html">4w rally</a></li>
-                        <li><a href="layout/events/4w-race.html">4w race</a></li>
-                        <li><a href="layout/events/2w-events.html">other discipline club events 2w</a></li>
-                        <li> <a href="layout/events/4w-events.html" class="dropdown-button-sub" data-activates='dropdown2-1'>Other discipline club events 4w</a></li>
-                        <ul id='dropdown2-1' class='dropdown-content'>
-                            <li><a href="#!">one</a></li>
-                            <li><a href="#!">two</a></li>
-                            <li><a href="#!">three</a></li>
-                        </ul>
-                    </ul>
-                </li>
-                <li><a href="#" class='dropdown-button' data-activates='dropdown3'>FORMS</a>
-                    <ul id='dropdown3' class='dropdown-content'>
-                        <li><a href="#!">karting</a></li>
-                        <li><a href="#!">2w rally</a></li>
-                        <li><a href="#!">2w race</a></li>
-                        <li><a href="#!">4w rally</a></li>
-                        <li><a href="#!">4w race</a></li>
-                        <li><a href="#!">other discipline club events 2w</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav collapsible" data-collapsible="accordion">
-                <li><a href="#" class="collapsible-header">FMSCI</a>
-                    <div class="collapsible-body" style="display: block">
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Council & Sub Committee</a></li>
-                            <li><a href="#">Secratariat</a></li>
-                            <li><a href="#">Member Clubs</a></li>
-                            <li><a href="#">Affiliations</a></li>
-                            <li><a href="#">FMSCI Accredited Academics</a></li>
-                            <li><a href="#">Roll of Honor</a></li>
-                            <li><a href="#">Annual Reports</a></li>
-                            <li><a href="#">Audit Report</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="collapsible-header">MOTORSPORT EVENTS</a>
-                    <div class="collapsible-body" style="display: block">
-                        <ul>
-                            <li><a href="#">Karting</a></li>
-                            <li><a href="#">2w Rally</a></li>
-                            <li><a href="#">2w Race</a></li>
-                            <li><a href="#">4w Rally</a></li>
-                            <li><a href="#">4w Race</a></li>
-                            <li><a href="#">Other Discipline Club Events 2w</a></li>
-                            <li><a href="#">Other Discipline Club Events 4w</a></li>
-                            <!-- Drop Down -->
-                            <li class="no-padding">
-                                <ul class="collapsible collapsible-accordion">
-                                    <li>
-                                        <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
-                                        <div class="collapsible-body">
-                                            <ul>
-                                                <li><a href="#!">First</a></li>
-                                                <li><a href="#!">Second</a></li>
-                                                <li><a href="#!">Third</a></li>
-                                                <li><a href="#!">Fourth</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Drop Down End -->
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#" class="collapsible-header">FORMS</a>
-                    <div class="collapsible-body" style="display: block">
-                        <ul>
-                            <li><a href="#">movies</a></li>
-                            <li><a href="#">movies</a></li>
-                            <li><a href="#">movies</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  <!-- above Nav -->
+  <div class="container" style="margin-top:15px">
+    <div class="row">
+      <div class="col s12 m12 l3 center-align">
+        <a href="index.html"><img src="http://www.fmsci.co.in/wp-content/uploads/2016/05/fmsci-logo-1.jpg" alt="Logo" class="responsive-img" style="max-height:60px;width:auto"></a>
+      </div>
+      <div class="col s12 m12 l9 center-align">
+        <div class="row">
+          <div class="col s12 m6 l5 ">
+            <a class="waves-effect waves-teal btn-flat">Private Area</a>
+            <a class="waves-effect waves-teal btn-flat">Contact</a>
+          </div>
+          <div class="col s12 m6 l7 center-align">
+            <div class="valign-wrapper">
+            <h6 style="display:inline-block">Member of :&nbsp</h6>
+            <img src="http://fmsci.co.in/wp-content/uploads/2016/05/member-of-FIA-1.jpg" alt="" style="border-radius:50%;max-width:40px;height:auto;padding:2px">
+            <img src="http://fmsci.co.in/wp-content/uploads/2016/05/fim.png" alt="" style="border-radius:50%;max-width:60px;height:auto;padding:2px">
+            <img src="http://fmsci.co.in/wp-content/uploads/2016/05/olympic-association.png" alt="" style="border-radius:50%;max-width:60px;height:auto;padding:2px">
+          </div>
+          </div>
         </div>
-    </nav>
-    <div class="z-depth-1">
-        <!-- #region Jssor Slider Begin -->
-        <!-- Generator: Jssor Slider Maker -->
-        <!-- Source: https://www.jssor.com -->
-        <script src="js/jssor.slider-25.1.0.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            jssor_1_slider_init = function() {
 
-                var jssor_1_SlideoTransitions = [
-                    [{
-                        b: 900,
-                        d: 2000,
-                        x: -379,
-                        e: {
-                            x: 7
-                        }
-                    }],
-                    [{
-                        b: 900,
-                        d: 2000,
-                        x: -379,
-                        e: {
-                            x: 7
-                        }
-                    }],
-                    [{
-                        b: -1,
-                        d: 1,
-                        o: -1,
-                        sX: 2,
-                        sY: 2
-                    }, {
-                        b: 0,
-                        d: 900,
-                        x: -171,
-                        y: -341,
-                        o: 1,
-                        sX: -2,
-                        sY: -2,
-                        e: {
-                            x: 3,
-                            y: 3,
-                            sX: 3,
-                            sY: 3
-                        }
-                    }, {
-                        b: 900,
-                        d: 1600,
-                        x: -283,
-                        o: -1,
-                        e: {
-                            x: 16
-                        }
-                    }]
-                ];
+      </div>
 
-                var jssor_1_options = {
-                    $AutoPlay: 1,
-                    $SlideDuration: 800,
-                    $SlideEasing: $Jease$.$OutQuint,
-                    $CaptionSliderOptions: {
-                        $Class: $JssorCaptionSlideo$,
-                        $Transitions: jssor_1_SlideoTransitions
-                    },
-                    $ArrowNavigatorOptions: {
-                        $Class: $JssorArrowNavigator$
-                    },
-                    $BulletNavigatorOptions: {
-                        $Class: $JssorBulletNavigator$
-                    }
-                };
+    </div>
 
-                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+  </div>
+  <nav class="teal lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="#!" class='dropdown-button' data-activates='dropdown1'><i class="material-icons right">arrow_drop_down</i>NMF</a>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="layout/fmsci/about-us.html">About Us</a></li>
+            <li><a href="layout/fmsci/history.html">History</a></li>
+            <li><a href="layout/fmsci/council-subcommittee.html">Council & Sub Committee</a></li>
+            <li><a href="layout/fmsci/secretariat.html">Secretariat</a></li>
+            <li><a href="layout/fmsci/member-clubs.html">Member Clubs</a></li>
+            <li><a href="layout/fmsci/affliations.html">Affiliations</a></li>
+            <li><a href="layout/fmsci/accredited-academics.html">FMSCI Accredited Academies</a></li>
+            <li><a href="layout/fmsci/roll-of-honour.html">Roll of Honour</a></li>
+            <li><a href="#!">Annual Reports</a></li>
+            <li><a href="#!">Audit Report</a></li>
+            <li><a href="#!">Articles of Association</a></li>
+            <li><a href="#!">Certificate of Incorporation</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button' data-activates='dropdown2'>MOTORSPORT EVENTS</a>
+          <ul id='dropdown2' class='dropdown-content'>
+            <li><a href="layout/events/karting.html">karting</a></li>
+            <li><a href="layout/events/2w-rally.html">2w rally</a></li>
+            <li><a href="layout/events/2w-race.html">2w race</a></li>
+            <li><a href="layout/events/4w-rally.html">4w rally</a></li>
+            <li><a href="layout/events/4w-race.html">4w race</a></li>
+            <li><a href="layout/events/2w-events.html">other discipline club events 2w</a></li>
+            <li> <a href="layout/events/4w-events.html" class="dropdown-button-sub" data-activates='dropdown2-1'>Other discipline club events 4w</a></li>
+            <ul id='dropdown2-1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button' data-activates='dropdown3'>FORMS</a>
+          <ul id='dropdown3' class='dropdown-content'>
+            <li><a href="#!">karting</a></li>
+            <li><a href="#!">2w rally</a></li>
+            <li><a href="#!">2w race</a></li>
+            <li><a href="#!">4w rally</a></li>
+            <li><a href="#!">4w race</a></li>
+            <li><a href="#!">other discipline club events 2w</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav collapsible" data-collapsible="accordion">
+        <li><a href="#" class="collapsible-header">FMSCI</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Council & Sub Committee</a></li>
+              <li><a href="#">Secratariat</a></li>
+              <li><a href="#">Member Clubs</a></li>
+              <li><a href="#">Affiliations</a></li>
+              <li><a href="#">FMSCI Accredited Academics</a></li>
+              <li><a href="#">Roll of Honor</a></li>
+              <li><a href="#">Annual Reports</a></li>
+              <li><a href="#">Audit Report</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="collapsible-header">MOTORSPORT EVENTS</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="#">Karting</a></li>
+              <li><a href="#">2w Rally</a></li>
+              <li><a href="#">2w Race</a></li>
+              <li><a href="#">4w Rally</a></li>
+              <li><a href="#">4w Race</a></li>
+              <li><a href="#">Other Discipline Club Events 2w</a></li>
+              <li><a href="#">Other Discipline Club Events 4w</a></li>
+              <!-- Drop Down -->
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#!">First</a></li>
+                        <li><a href="#!">Second</a></li>
+                        <li><a href="#!">Third</a></li>
+                        <li><a href="#!">Fourth</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Drop Down End -->
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="collapsible-header">FORMS</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="#">movies</a></li>
+              <li><a href="#">movies</a></li>
+              <li><a href="#">movies</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="z-depth-1">
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-25.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jssor_1_slider_init = function() {
 
-                /*#region responsive code begin*/
-                /*remove responsive code if you don't want the slider scales while window resizing*/
-                function ScaleSlider() {
-                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                    if (refSize) {
-                        refSize = Math.min(refSize, 3000);
-                        jssor_1_slider.$ScaleWidth(refSize);
-                    } else {
-                        window.setTimeout(ScaleSlider, 30);
-                    }
-                }
-                ScaleSlider();
-                $Jssor$.$AddEvent(window, "load", ScaleSlider);
-                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-                /*#endregion responsive code end*/
-            };
-        </script>
-        <style>
-            /* jssor slider loading skin double-tail-spin css */
-
-            .jssorl-004-double-tail-spin img {
-                animation-name: jssorl-004-double-tail-spin;
-                animation-duration: 1.2s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
+        var jssor_1_SlideoTransitions = [
+          [{
+            b: 900,
+            d: 2000,
+            x: -379,
+            e: {
+              x: 7
             }
-
-            @keyframes jssorl-004-double-tail-spin {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(360deg);
-                }
+          }],
+          [{
+            b: 900,
+            d: 2000,
+            x: -379,
+            e: {
+              x: 7
             }
-
-            .jssorb051 .i {
-                position: absolute;
-                cursor: pointer;
+          }],
+          [{
+            b: -1,
+            d: 1,
+            o: -1,
+            sX: 2,
+            sY: 2
+          }, {
+            b: 0,
+            d: 900,
+            x: -171,
+            y: -341,
+            o: 1,
+            sX: -2,
+            sY: -2,
+            e: {
+              x: 3,
+              y: 3,
+              sX: 3,
+              sY: 3
             }
-
-            .jssorb051 .i .b {
-                fill: #fff;
-                fill-opacity: 0.5;
-                stroke: #000;
-                stroke-width: 400;
-                stroke-miterlimit: 10;
-                stroke-opacity: 0.5;
+          }, {
+            b: 900,
+            d: 1600,
+            x: -283,
+            o: -1,
+            e: {
+              x: 16
             }
+          }]
+        ];
 
-            .jssorb051 .i:hover .b {
-                fill-opacity: .7;
-            }
+        var jssor_1_options = {
+          $AutoPlay: 1,
+          $SlideDuration: 800,
+          $SlideEasing: $Jease$.$OutQuint,
+          $CaptionSliderOptions: {
+            $Class: $JssorCaptionSlideo$,
+            $Transitions: jssor_1_SlideoTransitions
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
 
-            .jssorb051 .iav .b {
-                fill-opacity: 1;
-            }
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-            .jssorb051 .i.idn {
-                opacity: .3;
-            }
+        /*#region responsive code begin*/
+        /*remove responsive code if you don't want the slider scales while window resizing*/
+        function ScaleSlider() {
+          var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+          if (refSize) {
+            refSize = Math.min(refSize, 3000);
+            jssor_1_slider.$ScaleWidth(refSize);
+          } else {
+            window.setTimeout(ScaleSlider, 30);
+          }
+        }
+        ScaleSlider();
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+      };
+    </script>
+    <style>
+      /* jssor slider loading skin double-tail-spin css */
 
-            .jssora051 {
-                display: block;
-                position: absolute;
-                cursor: pointer;
-            }
+      .jssorl-004-double-tail-spin img {
+        animation-name: jssorl-004-double-tail-spin;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
 
-            .jssora051 .a {
-                fill: none;
-                stroke: #fff;
-                stroke-width: 360;
-                stroke-miterlimit: 10;
-            }
+      @keyframes jssorl-004-double-tail-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-            .jssora051:hover {
-                opacity: .8;
-            }
+      .jssorb051 .i {
+        position: absolute;
+        cursor: pointer;
+      }
 
-            .jssora051.jssora051dn {
-                opacity: .5;
-            }
+      .jssorb051 .i .b {
+        fill: #fff;
+        fill-opacity: 0.5;
+        stroke: #000;
+        stroke-width: 400;
+        stroke-miterlimit: 10;
+        stroke-opacity: 0.5;
+      }
 
-            .jssora051.jssora051ds {
-                opacity: .3;
-                pointer-events: none;
-            }
-        </style>
-        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:400px;overflow:hidden;visibility:hidden;">
-            <!-- Loading Screen -->
-            <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
-            </div>
-            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:400px;overflow:hidden;">
-                <!-- Images here -->
-                <div>
-                    <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2016/07/inspiring.jpg" />
-                </div>
-                <div>
-                    <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/07/3.jpg" />
-                </div>
-                <div>
-                    <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/07/2.jpg" />
-                </div>
-                <div>
-                    <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/06/fmsci-monitoring-slider.jpg" />
-                </div>
-                <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
-            </div>
-            <!-- Bullet Navigator -->
-            <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:14px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                <div data-u="prototype" class="i" style="width:18px;height:18px;">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      .jssorb051 .i:hover .b {
+        fill-opacity: .7;
+      }
+
+      .jssorb051 .iav .b {
+        fill-opacity: 1;
+      }
+
+      .jssorb051 .i.idn {
+        opacity: .3;
+      }
+
+      .jssora051 {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .jssora051 .a {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 360;
+        stroke-miterlimit: 10;
+      }
+
+      .jssora051:hover {
+        opacity: .8;
+      }
+
+      .jssora051.jssora051dn {
+        opacity: .5;
+      }
+
+      .jssora051.jssora051ds {
+        opacity: .3;
+        pointer-events: none;
+      }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:400px;overflow:hidden;visibility:hidden;">
+      <!-- Loading Screen -->
+      <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+      </div>
+      <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:400px;overflow:hidden;">
+        <!-- Images here -->
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2016/07/inspiring.jpg" />
+        </div>
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/07/3.jpg" />
+        </div>
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/07/2.jpg" />
+        </div>
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/06/fmsci-monitoring-slider.jpg" />
+        </div>
+        <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
+      </div>
+      <!-- Bullet Navigator -->
+      <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:14px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width:18px;height:18px;">
+          <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                             <circle class="b" cx="8000" cy="8000" r="5800"></circle>
                         </svg>
-                </div>
-            </div>
-            <!-- Arrow Navigator -->
-            <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        </div>
+      </div>
+      <!-- Arrow Navigator -->
+      <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                         <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
                     </svg>
-            </div>
-            <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </div>
+      <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                         <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
                     </svg>
-            </div>
-        </div>
-        <script type="text/javascript">
-            jssor_1_slider_init();
-        </script>
-        <!-- #endregion Jssor Slider End -->
+      </div>
     </div>
-    <br></br>
-    <!-- image slider -->
-    <div class="container">
-        <!--<div class="row">
+    <script type="text/javascript">
+      jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+  </div>
+  <br></br>
+  <!-- image slider -->
+  <div class="container">
+    <!--<div class="row">
       <div class="col s12">
       <div class="carousel carousel-slider" data-indicators="true">
         <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
@@ -344,158 +369,158 @@
      </div>
     </div>
     </div>-->
+    <div class="row">
+      <div class="col s12 m12 l8">
+        <!--women in sport and championship row-->
+
         <div class="row">
-            <div class="col s12 m12 l8">
-                <!--women in sport and championship row-->
-
-                <div class="row">
-                    <div class="col s12 m6 l6">
-                        <div class="card">
-                            <a href="#">
-                                <div class="card-image">
-                                    <img src="http://www.fmsci.co.in/wp-content/uploads/2017/07/Rajiv-Sethu2-670x450.jpg">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
-                                </div>
-                                <!--<div class="card-action">
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <img src="http://www.fmsci.co.in/wp-content/uploads/2017/07/Rajiv-Sethu2-670x450.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <!--<div class="card-action">
               <a href="#">This is a link</a>
             </div>-->
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <div class="card">
-                            <a href="#">
-                                <div class="card-image">
-                                    <img src="http://www.fmsci.co.in/wp-content/uploads/2017/07/Rajiv-Sethu2-670x450.jpg">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
-                                </div>
-                                <!--<div class="card-action">
-              <a href="#">This is a link</a>
-            </div>-->
-                            </a>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div style="padding-bottom:16px">
-                    <h5 class="center-align #ffa726 orange lighten-1 z-depth-1" style="padding:10px;color:white;border-radius:3px">News Updates</h5>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="card">
-                        <a href="#">
-                            <div class="card-image">
-                                <img src="https://lorempixel.com/800/400/food/1">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            <!--<div class="card-action">
-              <a href="#">This is a link</a>
-            </div>-->
-                        </a>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="card">
-                        <a href="#">
-                            <div class="card-image">
-                                <img src="https://lorempixel.com/800/400/food/2">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            <!--<div class="card-action">
-              <a href="#">This is a link</a>
-            </div>-->
-                        </a>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="card">
-                        <a href="#">
-                            <div class="card-image">
-                                <img src="https://lorempixel.com/800/400/food/3">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            <!--<div class="card-action">
-              <a href="#">This is a link</a>
-            </div>-->
-                        </a>
-                    </div>
-                </div>
+              </a>
             </div>
-            <div class="col s12 m12 l3 offset-l1">
-                <div class="row">
-                    <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check online license status</a>
-                    <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check offline license status</a>
-                    <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">guildelines - new entrants</a>
-                    <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check online license status</a>
-                    <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">IMP: FMSCI MEMBERS NOTE</a>
-                    <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px;min-height: 30px;font-size:13px">Organisers:FMSCI initiative for promotion of your event</a>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <img src="http://www.fmsci.co.in/wp-content/uploads/2017/07/Rajiv-Sethu2-670x450.jpg">
+                  <span class="card-title">Card Title</span>
                 </div>
-                <div class="row">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthefmsci%2F&amp;tabs=timeline&amp;width=320&amp;height=300&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=true&amp;show_facepile=false&amp;appId=228743243958125"
-                        width="320" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
                 </div>
+                <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+              </a>
             </div>
+          </div>
+
+
         </div>
+        <div style="padding-bottom:16px">
+          <h5 class="center-align #ffa726 orange lighten-1 z-depth-1" style="padding:10px;color:white;border-radius:3px">News Updates</h5>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <a href="#">
+              <div class="card-image">
+                <img src="https://lorempixel.com/800/400/food/1">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <a href="#">
+              <div class="card-image">
+                <img src="https://lorempixel.com/800/400/food/2">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <a href="#">
+              <div class="card-image">
+                <img src="https://lorempixel.com/800/400/food/3">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 offset-l1">
+        <div class="row">
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check online license status</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check offline license status</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">guildelines - new entrants</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check online license status</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">IMP: FMSCI MEMBERS NOTE</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px;min-height: 30px;font-size:13px">Organisers:FMSCI initiative for promotion of your event</a>
+        </div>
+        <div class="row">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthefmsci%2F&amp;tabs=timeline&amp;width=320&amp;height=300&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=true&amp;show_facepile=false&amp;appId=228743243958125"
+            width="320" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+
+        </div>
+      </div>
     </div>
+  </div>
 
 
-    <footer class="page-footer orange z-depth-5" style="border-top: 5px solid #4db6ac">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+  <footer class="page-footer orange z-depth-5" style="border-top: 5px solid #4db6ac">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Quick Links</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Find Us</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                @
-            </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Quick Links</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="col l3 s12">
+          <h5 class="white-text">Find Us</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        @
+      </div>
+    </div>
+  </footer>
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
 
