@@ -30,4 +30,8 @@ body{
 .dropdown-content li a{
   padding-top: 9px;
   padding-bottom: 9px;
+  color:#212121;
+}
+.card a{
+  color:#212121;
 }
