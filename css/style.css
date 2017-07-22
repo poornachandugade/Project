@@ -51,3 +51,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .material-icons{
   margin: 0 !important;
 }
+#jssor_1 , #slides{
+  height: 400px;
+}
