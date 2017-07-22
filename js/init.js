@@ -23,7 +23,7 @@ $('.dropdown-button').dropdown({
   $('.dropdown-button-sub').dropdown({
       inDuration: 300,
       outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
       hover: true, // Activate on hover
       gutter: $('.dropdown-content').width()  , // Spacing from edge
       belowOrigin: false, // Displays dropdown below the button
@@ -33,7 +33,7 @@ $('.dropdown-button').dropdown({
   $('.regulations').dropdown({
       inDuration: 300,
       outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
       hover: true, // Activate on hover
       gutter: 233 , // Spacing from edge
       belowOrigin: false, // Displays dropdown below the button

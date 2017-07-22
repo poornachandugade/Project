@@ -30,12 +30,28 @@
 		</div>
 
 		<script src="js/material-photo-gallery.min.js"></script>
+		  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
 		<script>
 			var elem = document.querySelector('.m-p-g');
 
 			document.addEventListener('DOMContentLoaded', function() {
 				var gallery = new MaterialPhotoGallery(elem);
 			});
+
+			// $(document).keyup(function(e) {
+			// 	if($('.m-p-g__fullscreen').hasClass('active')){
+			// 		if (e.keyCode === 27) $('.m-p-g__controls-close').click();  // esc
+			// 		if (e.keyCode === 37){
+			// 			$('.m-p-g__controls-arrow--next').click();
+			// 			}  
+			// 		if (e.keyCode === 39) {//next
+			// 			$('.m-p-g__controls-arrow--prev').click();
+			// 			};  
+			// 	}
+			// });
 		</script>
 	</body>
 </html>
