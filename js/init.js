@@ -40,7 +40,16 @@ $('.dropdown-button').dropdown({
       alignment: 'left' // Displays dropdown with edge aligned to the left of button
     }
   );
-
+  $('.dropdown-button-sub2').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 230  , // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
   // carousel
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   // on hovering a card add shadow
@@ -61,9 +70,7 @@ $('.button-collapse').sideNav({
 
 		$(window).scroll(function(){
 			if($(this).scrollTop() > pos.top){
-
 				 $('#menu').addClass('fixed');
-         console.log("Fixed")
 			} else if($(this).scrollTop() <= pos.top && menu.hasClass('fixed')){
         	$('#menu').removeClass('fixed');
 			}
