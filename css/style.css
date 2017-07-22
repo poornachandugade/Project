@@ -48,3 +48,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   top: 0;
   z-index: 10000000;
 }
+.material-icons{
+  margin: 0 !important;
+}
