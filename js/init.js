@@ -79,5 +79,6 @@ $('.drop-btn-4').on('mouseover',function(){
   );
 });
 // $('#dropdown4 > ul').on(mouseover,function(){
-  
+
 // });
+$(".close_btn").click(function(){$(".drag-target").click()});
