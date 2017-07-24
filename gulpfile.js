@@ -27,8 +27,8 @@ gulp.task('5', function() {
     .pipe(gulp.dest('./src/nmf/'));
 });
 gulp.task('6', function() {
-  return gulp.src(['./header.html','./nmf/memberclubs.html','./footer.html'])
-    .pipe(concat('memberclubs.html'))
+  return gulp.src(['./header.html','./nmf/member-clubs.html','./footer.html'])
+    .pipe(concat('member-clubs.html'))
     .pipe(gulp.dest('./src/nmf/'));
 });
 gulp.task('7', function() {
