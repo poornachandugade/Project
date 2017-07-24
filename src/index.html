@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>NMF</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body class="grey lighten-4">
+  <!-- above Nav -->
+  <div class="container" style="margin-top:10px">
+    <div class="row" style="margin:0">
+      <div class="col s12 m12 l3 center-align">
+        <a href="index.html"><img src="http://www.fmsci.co.in/wp-content/uploads/2016/05/fmsci-logo-1.jpg" alt="Logo" class="responsive-img" style="max-height:60px;width:auto"></a>
+      </div>
+      <div class="col s12 m12 l9">
+        <div class="row" style="margin-bottom:0">
+          <div class="col s12 m6 l5 center-align" style="line-height:50px;height:50px">
+            <a class="waves-effect waves-teal btn-flat">Private Area</a>
+            <a class="waves-effect waves-teal btn-flat">Contact</a>
+          </div>
+          <div class="col s12 m6 l7 center-align" style="height:50px">
+            <div class="col s5 l3" style="line-height:50px;height:50px">
+              <span>MEMBER OF :</span>
+              <!-- <a class="btn-flat disabled" style="color:black">MEMBER OF:</a> -->
+            </div>
+            <div class="col s7 l9">
+              <img src="http://fmsci.co.in/wp-content/uploads/2016/05/member-of-FIA-1.jpg" alt="" style="max-width:40px;height:auto;padding:3px" class="left">
+              <img src="http://fmsci.co.in/wp-content/uploads/2016/05/fim.png" alt="" style="max-width:40px;height:auto;padding:3px" class="left">
+              <img src="http://fmsci.co.in/wp-content/uploads/2016/05/olympic-association.png" alt="" style="max-width:40px;height:auto;padding:3px" class="left">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <nav class="teal lighten-1 z-depth-3" id="menu" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="#!" class='dropdown-button' data-activates='dropdown1'>NMF<i class="material-icons right">&#xE313</i></a>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="nmf/about-us.html">About Us</a></li>
+            <li><a href="nmf/history.html">History</a></li>
+            <li><a href="nmf/council-subcommittee.html">Council & Sub Committee</a></li>
+            <li><a href="nmf/secretariat.html">Secretariat</a></li>
+            <li><a href="nmf/member-clubs.html">Member Clubs</a></li>
+            <li><a href="nmf/affliations.html">Affiliations</a></li>
+            <li><a href="nmf/accredited-academics.html">FMSCI Accredited Academies</a></li>
+            <li><a href="nmf/roll-of-honour.html">Roll of Honour</a></li>
+            <li><a href="#!" class="dropdown-button-sub" data-activates='dropdown1-1'><i class="material-icons right">&#xE315;</i>Annual Reports</a>
+            <ul id='dropdown1-1' class='dropdown-content'>
+              <li><a href="#!">2015 - 2016</a></li>
+              <li><a href="#!">2016 - 2017</a></li>
+            </ul></li>
+            <li><a href="#!" class="dropdown-button-sub" data-activates='dropdown1-a'><i class="material-icons right">&#xE315;</i>Audit Reports</a></li>
+            <ul id='dropdown1-a' class='dropdown-content'>
+              <li><a href="#!">2011 - 2012</a></li>
+              <li><a href="#!">2012 - 2013</a></li>
+              <li><a href="#!">2013 - 2014</a></li>
+              <li><a href="#!">2014 - 2015</a></li>
+              <li><a href="#!">2015 - 2016</a></li>
+            </ul>
+            <!-- <li><a href="#!" class="dropdown-button-sub" data-activates='dropdown1-1'></a></li>
+            <ul id='dropdown1-1' class='dropdown-content right'>
+              <li><a href="#!"></a></li>
+              <li><a href="#!"></a></li>
+            </ul></li> -->
+            <li><a href="#!">Articles of Association</a></li>
+            <li><a href="#!">Certificate of Incorporation</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button' data-activates='dropdown2'>MOTORSPORT EVENTS<i class="material-icons right">&#xE313</i></a>
+          <ul id='dropdown2' class='dropdown-content'>
+            <li><a href="events/karting.html">Karting</a></li>
+            <li><a href="events/2w-rally.html">2w rally</a></li>
+            <li><a href="events/2w-race.html">2w race</a></li>
+            <li><a href="events/4w-rally.html">4w rally</a></li>
+            <li><a href="events/4w-race.html">4w race</a></li>
+            <li><a href="events/2w-events.html">Other discipline club events 2w</a></li>
+            <li> <a href="events/4w-events.html" class="dropdown-button-sub" data-activates='dropdown2-1'>Other discipline club events 4w</a></li>
+            <ul id='dropdown2-1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button' data-activates='dropdown3'>FORMS<i class="material-icons right">&#xE313</i></a>
+          <ul id='dropdown3' class='dropdown-content'>
+            <li><a href="#!">Competition Licence - Online</a></li>
+            <li><a href="#!">Entrant Licence - Download</a></li>
+            <li><a href="#!">Permit Licence - Download</a></li>
+            <li><a href="#!">Membership Form - Download</a></li>
+            <li><a href="#!">Railway Concession Form - Download</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button drop-btn-4' data-activates='dropdown4'>REGULATIONS<i class="material-icons right">&#xE313;</i></a>
+          <ul id='dropdown4' class='dropdown-content'>
+            <li><a href="#!" data-activates='dropdown4-1' class="regulations"><i class="material-icons right">&#xE315;</i>Sporting Regulations</a></li>
+            <ul id='dropdown4-1' class='dropdown-content'>
+              <li><a href="#!">Sporting Code</a></li>
+            </ul>
+            <li><a href="#!" class="regulations" data-activates='dropdown4-2'><i class="material-icons right">&#xE315;</i>General Prescriptions</a></li>
+            <ul id='dropdown4-2' class='dropdown-content'>
+              <li><a href="#!" class="dropdown-button-sub2" data-activates='dropdown4-1-1'><i class="material-icons right">&#xE315;</i>Karting</a></li>
+              <ul id='dropdown4-1-1' class='dropdown-content right'>
+                <li><a href="#!">Karting 2 stroke</a></li>
+                <li><a href="#!">Karing 4 stroke</a></li>
+              </ul></li>
+              <li><a href="#!" class="dropdown-button-sub2" data-activates='dropdown4-1-2'><i class="material-icons right">&#xE315;</i>2w</a></li>
+              <ul id='dropdown4-1-2' class='dropdown-content right'>
+                <li><a href="#!">2w Racing</a></li>
+                <li><a href="#!">2w Racing Disciplanary Arbitration</a></li>
+                <li><a href="#!">2w Satge Rally</a></li>
+              </ul></li>
+              <li><a href="#!">4w</a></li>
+            </ul>
+            <li><a href="#!" class="regulations" data-activates='dropdown4-3'><i class="material-icons right">&#xE315;</i>Technical Regulation</a></li>
+            <ul id='dropdown4-3' class='dropdown-content'>
+              <li><a href="#!">2w</a></li>
+              <li><a href="#!">4w</a></li>
+            </ul>
+            <li><a href="#!">Safety Regulations</a></li>
+            <li><a href="#!">Schedule of fees</a></li>
+            <li><a href="#!">Co-Efficient Points</a></li>
+            <li><a href="#!" class="regulations" data-activates='dropdown4-4'><i class="material-icons right">&#xE315;</i>Homologation</a></li>
+            <ul id='dropdown4-4' class='dropdown-content'>
+              <li><a href="#!">2w Homologation</a></li>
+              <li><a href="#!">4w Homologation</a></li>
+              <li><a href="#!">Circuits</a></li>
+            </ul>
+            <li><a href="">Admin Procedures</a></li>
+            <li><a href="">Anti - Doping</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button' data-activates='dropdown5'>MEDIA<i class="material-icons right">&#xE313;</i></a>
+          <ul id='dropdown5' class='dropdown-content'>
+            <li><a href="#!">Press Release</a></li>
+            <li><a href="#!">Press Coverage</a></li>
+            <li><a href="#!">Promotion of Events on Social Media/Website/Magazine</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class='dropdown-button' data-activates='dropdown6'>GALLERY<i class="material-icons right">&#xE313;</i></a>
+          <ul id='dropdown6' class='dropdown-content'>
+            <li><a href="#!">Karting</a></li>
+            <li><a href="#!">2w </a></li>
+            <li><a href="#!">4w</a></li>
+            <li><a href="">Events &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">CALENDAR</a>
+        </li>
+      </ul>
+      <!-- MOBILE -->
+      <ul id="nav-mobile" class="side-nav collapsible" data-collapsible="accordion">
+        <li class="waves-effect close_btn right"><a href="#!"><i class="material-icons ">&#xE5CD;</i></a></li>
+        <li><a href="#" class="collapsible-header">FMSCI</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="nmf/about-us.html">About Us</a></li>
+              <li><a href="nmf/history.html">History</a></li>
+              <li><a href="nmf/council-subcommittee.html">Council & Sub Committee</a></li>
+              <li><a href="nmf/secretariat.html">Secretariat</a></li>
+              <li><a href="nmf/member-clubs.html">Member Clubs</a></li>
+              <li><a href="nmf/affliations.html">Affiliations</a></li>
+              <li><a href="nmf/accredited-academics.html">FMSCI Accredited Academies</a></li>
+              <li><a href="nmf/roll-of-honour.html">Roll of Honour</a></li>
+              <li><a href="#!">Annual Reports</a></li>
+              <li><a href="#!">Audit Report</a></li>
+              <li><a href="#!">Articles of Association</a></li>
+              <li><a href="#!">Certificate of Incorporation</a></li>>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="collapsible-header">MOTORSPORT EVENTS</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="events/karting.html">Karting</a></li>
+              <li><a href="events/2w-rally.html">2w rally</a></li>
+              <li><a href="events/2w-race.html">2w race</a></li>
+              <li><a href="events/4w-rally.html">4w rally</a></li>
+              <li><a href="events/4w-race.html">4w race</a></li>
+              <li><a href="events/2w-events.html">other discipline club events 2w</a></li>
+              <!-- Drop Down -->
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Other Discipline Club Events 4w<i class="material-icons right">keyboard_arrow_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li><a href="#!">three</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Drop Down End -->
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="collapsible-header">FORMS</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="#!">Competition Licence - Online</a></li>
+              <li><a href="#!">Entrant Licence - Download</a></li>
+              <li><a href="#!">Permit Licence - Download</a></li>
+              <li><a href="#!">Membership Form - Download</a></li>
+              <li><a href="#!">Railway Concession Form - Download</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="collapsible-header">REGULATIONS</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <!-- Drop Down -->
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Sporting Regulations<i class="material-icons right">keyboard_arrow_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#!">Sporting Code</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Drop Down End -->
+              <!-- Drop Down -->
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">General Prescriptions<i class="material-icons right">keyboard_arrow_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <!-- sub-Drop Down -->
+                        <li class="no-padding">
+                          <ul class="collapsible collapsible-accordion">
+                            <li>
+                              <a class="collapsible-header">Karting<i class="material-icons right">keyboard_arrow_down</i></a>
+                              <div class="collapsible-body">
+                                <ul>
+                                  <li><a href="#!">Karting 2 stroke</a></li>
+                                  <li><a href="#!">Karting 4 stroke</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- sub-Drop Down End -->
+                        <!-- sub-Drop Down -->
+                        <li class="no-padding">
+                          <ul class="collapsible collapsible-accordion">
+                            <li>
+                              <a class="collapsible-header">2w<i class="material-icons right">keyboard_arrow_down</i></a>
+                              <div class="collapsible-body">
+                                <ul>
+                                  <li><a href="#!">2w Racing</a></li>
+                                  <li><a href="#!">2w Racing Disciplanary Arbitration</a></li>
+                                  <li><a href="#!">2w Stage Rally</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <!-- sub-Drop Down End -->
+                        <li><a href="#!">4w</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Drop Down End -->
+              <!-- Drop Down -->
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Technical Regulations<i class="material-icons right">keyboard_arrow_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#!">2w</a></li>
+                        <li><a href="#!">4w</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Drop Down End -->
+              <li><a href="#!">Safety Regulations</a></li>
+              <li><a href="#!">Schedule of fees</a></li>
+              <li><a href="#!">Co-Efficient Points</a></li>
+              <!-- Drop Down -->
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header">Homologation<i class="material-icons right">keyboard_arrow_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="#!">2w Homologation</a></li>
+                        <li><a href="#!">4w Homologation</a></li>
+                        <li><a href="#!">Circuits</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Drop Down End -->
+              <li><a href="">Admin Procedures</a></li>
+              <li><a href="">Anti - Doping</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="collapsible-header">MEDIA</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="#!">Press Release</a></li>
+              <li><a href="#!">Press Coverage</a></li>
+              <li><a href="#!">Promotion of Events</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="collapsible-header">GALLERY</a>
+          <div class="collapsible-body" style="display: block">
+            <ul>
+              <li><a href="#!">Karting</a></li>
+              <li><a href="#!">2w </a></li>
+              <li><a href="#!">4w</a></li>
+              <li><a href="">Events</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="collapsible-header">CALENDAR</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+  </nav>
+  <div>
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-25.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jssor_1_slider_init = function() {
+
+        var jssor_1_SlideoTransitions = [
+          [{
+            b: 900,
+            d: 2000,
+            x: -379,
+            e: {
+              x: 7
+            }
+          }],
+          [{
+            b: 900,
+            d: 2000,
+            x: -379,
+            e: {
+              x: 7
+            }
+          }],
+          [{
+            b: -1,
+            d: 1,
+            o: -1,
+            sX: 2,
+            sY: 2
+          }, {
+            b: 0,
+            d: 900,
+            x: -171,
+            y: -341,
+            o: 1,
+            sX: -2,
+            sY: -2,
+            e: {
+              x: 3,
+              y: 3,
+              sX: 3,
+              sY: 3
+            }
+          }, {
+            b: 900,
+            d: 1600,
+            x: -283,
+            o: -1,
+            e: {
+              x: 16
+            }
+          }]
+        ];
+
+        var jssor_1_options = {
+          $AutoPlay: 1,
+          $SlideDuration: 800,
+          $SlideEasing: $Jease$.$OutQuint,
+          $CaptionSliderOptions: {
+            $Class: $JssorCaptionSlideo$,
+            $Transitions: jssor_1_SlideoTransitions
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*#region responsive code begin*/
+        /*remove responsive code if you don't want the slider scales while window resizing*/
+        function ScaleSlider() {
+          var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+          if (refSize) {
+            refSize = Math.min(refSize, 3000);
+            jssor_1_slider.$ScaleWidth(refSize);
+          } else {
+            window.setTimeout(ScaleSlider, 30);
+          }
+        }
+        ScaleSlider();
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+      };
+    </script>
+    <style>
+      /* jssor slider loading skin double-tail-spin css */
+
+      .jssorl-004-double-tail-spin img {
+        animation-name: jssorl-004-double-tail-spin;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes jssorl-004-double-tail-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .jssorb051 .i {
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .jssorb051 .i .b {
+        fill: #fff;
+        fill-opacity: 0.5;
+        stroke: #000;
+        stroke-width: 400;
+        stroke-miterlimit: 10;
+        stroke-opacity: 0.5;
+      }
+
+      .jssorb051 .i:hover .b {
+        fill-opacity: .7;
+      }
+
+      .jssorb051 .iav .b {
+        fill-opacity: 1;
+      }
+
+      .jssorb051 .i.idn {
+        opacity: .3;
+      }
+
+      .jssora051 {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .jssora051 .a {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 360;
+        stroke-miterlimit: 10;
+      }
+
+      .jssora051:hover {
+        opacity: .8;
+      }
+
+      .jssora051.jssora051dn {
+        opacity: .5;
+      }
+
+      .jssora051.jssora051ds {
+        opacity: .3;
+        pointer-events: none;
+      }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;overflow:hidden;visibility:hidden;">
+      <!-- Loading Screen -->
+      <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+      </div>
+      <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;overflow:hidden;" id="slides">
+        <!-- Images here -->
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2016/07/inspiring.jpg" />
+        </div>
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/07/3.jpg" />
+        </div>
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/07/2.jpg" />
+        </div>
+        <div>
+          <img data-u="image" src="http://www.fmsci.co.in/wp-content/uploads/2017/06/fmsci-monitoring-slider.jpg" />
+        </div>
+        <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
+      </div>
+      <!-- Bullet Navigator -->
+      <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:14px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width:18px;height:18px;">
+          <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                        </svg>
+        </div>
+      </div>
+      <!-- Arrow Navigator -->
+      <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                    </svg>
+      </div>
+      <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                    </svg>
+      </div>
+    </div>
+    <script type="text/javascript">
+      jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+  </div>
+  <br></br>
+  <!-- image slider -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l8">
+        <!--women in sport and championship row-->
+
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <img src="http://www.fmsci.co.in/wp-content/uploads/2017/07/Rajiv-Sethu2-670x450.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <a href="#">
+                <div class="card-image">
+                  <img src="http://www.fmsci.co.in/wp-content/uploads/2017/07/Rajiv-Sethu2-670x450.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+        <div style="padding-bottom:16px">
+          <h5 class="center-align #ffa726 orange lighten-1 z-depth-1" style="padding:10px;color:white;border-radius:3px">News Updates</h5>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <a href="#">
+              <div class="card-image">
+                <img src="https://lorempixel.com/800/400/food/1">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <a href="#">
+              <div class="card-image">
+                <img src="https://lorempixel.com/800/400/food/2">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <a href="#">
+              <div class="card-image">
+                <img src="https://lorempixel.com/800/400/food/3">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <!--<div class="card-action">
+              <a href="#">This is a link</a>
+            </div>-->
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 offset-l1">
+        <div class="row">
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check online license status</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check offline license status</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">guildelines - new entrants</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">check online license status</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px">IMP: FMSCI MEMBERS NOTE</a>
+          <a class="waves-effect waves-light btn-large" style="width:100%;margin-bottom:10px;min-height: 30px;font-size:13px;line-height:20px;padding:10px">Organisers:FMSCI initiative for promotion of your event</a>
+        </div>
+        <div class="row">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthefmsci%2F&amp;tabs=timeline&amp;width=320&amp;height=300&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=true&amp;show_facepile=false&amp;appId=228743243958125"
+            width="320" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer grey darken-4 z-depth-1" style="border-top: 5px solid #4db6ac">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">NMF Supports</h5>
+          <img src="http://fmsci.co.in/wp-content/uploads/2016/06/FIA-Road-Safety.jpg" alt="">
+          <p class="grey-text text-lighten-4">ROAD SAFETY</p>
+          <p class="grey-text text-lighten-4">
+The FIA is dedicated to improving the safety of every day road users throughout the world.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Registered Office</h5>
+          <p class="grey-text text-lighten-4">The federation of motor sports clubs of Nepal</p>
+          <p class="grey-text text-lighten-4">
+              B-36, Dwivedi colony <br>
+              Sardar Patel Road, <br>
+              Kathmandu,Nepal-799200 <br>
+          </p>
+        </div>
+        <div class="col l2 s12">
+          <h5 class="white-text">Quick Links</h5>
+          <ul>
+            <li><a class="white-text" href="#!">career</a></li>
+            <li><a class="white-text" href="#!">contact us</a></li>
+            <li><a class="white-text" href="#!">Terms and conditions</a></li>
+            <li><a class="white-text" href="#!">List of days</a></li>
+          </ul>
+        </div>
+        <div class="col l4 s12">
+            <div id="map" style="width:100%;">
+                        <iframe width="100%" height="300px" frameborder="0" style="border:0"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyzRYcsvb0prvkn6o0_soTgYceTfLhwnU&center=25.493216,81.864371
+                                &q=place_id:ChIJI3fBbHnKmjkRjQJI_xMLBBQ" allowfullscreen>
+                        </iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy;&nbsp; NMF , 2017
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>

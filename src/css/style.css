@@ -1,0 +1,56 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+@media screen and (min-width:800px){
+  .container{
+    width: 88%;
+  }
+}
+
+/*nav*/
+@media only screen and (min-width: 601px){
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 58px;
+    line-height: 58px;
+}
+}
+.dropdown-content{
+    overflow: visible !important;
+}
+.dropdown-content li{
+  min-height:34px;
+}
+.dropdown-content li a{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color:#212121;
+  font-size: 15px;
+}
+.card a{
+  color:#212121;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  z-index: 10000000;
+}
+.material-icons{
+  margin: 0 !important;
+}
+#jssor_1 , #slides{
+  height: 400px;
+}

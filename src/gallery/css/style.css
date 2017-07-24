@@ -1,0 +1,34 @@
+.my-gallery {
+  width: 100%;
+  float: left;
+}
+.my-gallery img {
+  width: auto;
+  height: 180px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  min-width: 100px;
+}
+.my-gallery figcaption {
+  display: none;
+}
+@media(max-width:400px){
+  .my-gallery{
+    position: relative;
+  }
+  .my-gallery img {
+  width: 80%;
+  height: auto;
+  left: 10%;
+  position: relative;
+}
+.my-gallery figure{
+  float: none;
+}
+}
