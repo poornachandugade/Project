@@ -56,12 +56,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 /*mobile nav styles*/
 #nav-mobile,#nav-mobile ul{
-  background: rgba(235,233,249,1);
-background: -moz-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 26%, rgba(206,199,236,1) 50%, rgba(193,191,234,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,233,249,1)), color-stop(26%, rgba(216,208,239,1)), color-stop(50%, rgba(206,199,236,1)), color-stop(100%, rgba(193,191,234,1)));
-background: -webkit-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 26%, rgba(206,199,236,1) 50%, rgba(193,191,234,1) 100%);
-background: -o-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 26%, rgba(206,199,236,1) 50%, rgba(193,191,234,1) 100%);
-background: -ms-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 26%, rgba(206,199,236,1) 50%, rgba(193,191,234,1) 100%);
+  
 }
 /*.side-nav>li>a{
   color:teal;
