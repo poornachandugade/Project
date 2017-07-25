@@ -1,10 +1,4 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+
 body{
   max-width: 100%;
   overflow-x: hidden;
@@ -28,10 +22,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 58px;
     line-height: 58px;
 }
-/*#nmf-title{
-  display: inline-block;
 
-}*/
 }
 .dropdown-content{
     overflow: visible !important;
@@ -78,9 +69,16 @@ color:teal;
 /*.side-nav a.active:hover{
   background: rgba(147,206,222,1);
 }*/
-/*#nmf-title{
- display: none;
- position: absolute;
- left: 100px;
- top: 0px;
-}*/
+#nmf-title{
+ font-size: 0px;
+}
+@media(max-width:992px){
+  #nmf-title{
+  font-size: 16px;
+  }
+}
+@media(max-width:600px){
+  #nmf-title{
+  font-size: 14px;
+  }
+}
