@@ -557,6 +557,45 @@
   <br></br>
   <!-- image slider -->
   <div class="container">
+    <style>
+      /* Make it a marquee */
+.marquee {
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 30em }
+    100% { text-indent: -105em }
+}
+
+/* Make it pretty */
+.marquee{
+    padding-left: 1.5em;
+    position: relative;
+}
+.marquee a{
+  margin-right: 100px;
+}
+
+
+    </style>
+    <div class="row  z-depth-1">
+      <div class="col s3 l2 orange white-text center-align" style="padding: 10px">News updates</div>
+      <div class="col s8 news-updates section" style="padding: 10px">
+        <p class="marquee black-text"><a href="#!">New update 1</a>
+        <a href="#!">News update 2</a>
+         <a href="#!">Microsoft account</a></p>
+      </div>
+    </div>
     <div class="row">
       <div class="col s12 m12 l8">
         <!--women in sport and championship row-->
