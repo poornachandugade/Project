@@ -81,6 +81,11 @@ gulp.task('16', function() {
     .pipe(concat('karting.html'))
     .pipe(gulp.dest('./src/events/'));
 });
+// gulp.task('17', function() {
+//   return gulp.src(['./header.html','./src/contact.html','./footer.html'])
+//     .pipe(concat('contact.html'))
+//     .pipe(gulp.dest('./src/'));
+// });
 let arr = [];
 let num;
 for(let i =0;i < 16;i++){
