@@ -42,7 +42,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .fixed{
   position: fixed;
   top: 0;
-  z-index: 10000000;
+  z-index: 100;
 }
 .material-icons{
   margin: 0 !important;
